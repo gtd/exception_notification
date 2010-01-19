@@ -1,3 +1,7 @@
+# Temporary hack for Rails 3 seemingly not supporting gem-plugins anymore.
+# https://rails.lighthouseapp.com/projects/8994/tickets/3745-railsinitrb-is-not-being-called-anymore#ticket-3745-1
+require File.expand_path('../../rails/init.rb', __FILE__)
+
 require 'pathname'
 
 class ExceptionNotifier < ActionMailer::Base
